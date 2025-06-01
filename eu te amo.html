@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Meu Amor!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fce4ec;
+      color: #880e4f;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    .heart {
+      color: #e91e63;
+      font-size: 2em;
+    }
+    .message {
+      margin-top: 30px;
+      font-size: 1.2em;
+      font-style: italic;
+      color: #d32f2f;
+    }
+    .button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #c2185b;
+    }
+    #video-container {
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+    }
+    video {
+      display: none;
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oiii Nat 💖🌹</h1>
+  <h1>Feliz Aniversário, Meu Amor!</h1>
+  <p>Hoje celebramos o dom da sua vida, e eu sou eternamente grato por cada momento ao seu lado.</p>
+  <p class="heart">❤️ Você é o meu tudo. ❤️</p>
+  <p>Que este dia seja tão especial quanto você é para mim.</p>
+  <p class="message">"Amar você é a melhor parte da minha vida. Te amo mais a cada dia!"</p>
+  
+  
+
+  <button class="button" onclick="alert('Você é o meu maior presente. Te amo!')">Clique aqui para uma surpresa</button>
+  <button class="button" onclick="alert('Cada momento ao seu lado é único e especial. Te amo!')">Clique aqui para outra surpresa</button>
+  
+  <div id="video-container">
+    <button class="button" onclick="mostrarVideo()">Proibido clicaaaaar</button>
+    <video id="video" autoplay muted>
+      <source src="video.mp4" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+  </div>
+  <script>
+    function mostrarVideo() {
+      const video = document.getElementById('video');
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+</body>
+</html>
